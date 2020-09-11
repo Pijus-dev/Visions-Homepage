@@ -1,0 +1,803 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #e8f4f2;
+}
+
+.header-section {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.language {
+  width: 25%;
+}
+
+.language > p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.certifications {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.certification-details {
+  display: flex;
+}
+.certification-details > img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+  fill: #cccccc;
+}
+
+.certification-details > p {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #cccccc;
+}
+
+.auth {
+  width: 25%;
+}
+.auth > p {
+  float: right;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+nav {
+  height: 90px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 1.5px;
+  height: 64%;
+  background-color: #cccccc;
+  margin-left: 15px;
+}
+
+.navbar-wrapper {
+  width: 60%;
+  margin-left: 15px;
+}
+
+#searchInput {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 3px;
+  width: 100%;
+}
+
+.item {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item:hover {
+  color: black;
+}
+
+.navbar-item {
+  color: black;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar-item:hover {
+  color: #cccccc;
+}
+
+.icons {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icons > img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-bar > p {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.search-bar > img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.background-color {
+  background-image: url("./assets/Untitled-1.png");
+  position: absolute;
+  top: 52%;
+  height: 400px;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -100;
+}
+
+.carousel-wrapper {
+  width: 75%;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.carousel-indicators > li {
+  background-color: black;
+  width: 4%;
+}
+
+.carousel-container {
+  height: 600px;
+  float: right;
+}
+
+.carousel-container > img {
+  height: 600px;
+  object-fit: contain;
+}
+
+.carousel-container > button {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 14px 40px;
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.arrow-icon {
+  width: 40px;
+  transition: width 0.5s;
+  height: 40px;
+}
+
+.arrow-icon:hover {
+  width: 50px;
+  object-fit: contain;
+}
+
+.previous {
+  transform: rotate(180deg);
+}
+
+.carousel-title {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.carousel-title > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: -14px;
+}
+
+.carousel-title > h2 {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 10 !important;
+}
+
+.carousel-title > p {
+  margin-bottom: -60px;
+}
+
+.carousel-glasses {
+  position: absolute;
+  bottom: 30px;
+}
+
+.euro {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.price {
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+.logos-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.logos {
+  height: 300px;
+  display: flex;
+  width: 72%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  animation: 2.5s ease-in-out infinite alternate move;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-15%);
+  }
+  to {
+    transform: translateX(calc(100vw - 105%));
+  }
+}
+
+.brands > img {
+  height: 100px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 50;
+  line-height: 44px;
+  color: black;
+  margin-top: -30px;
+}
+
+.products {
+  width: 90%;
+  margin: 50px auto 0 auto;
+}
+
+.product-item {
+  position: relative;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.previous-price {
+  text-decoration: line-through;
+  color: #cccccc;
+  font-size: 12px;
+}
+
+.discount-price {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-name {
+  margin-top: 10px;
+}
+
+.product-name > h4 {
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.product-name > h4:hover {
+  text-decoration: underline;
+}
+
+.product-name > h5 {
+  cursor: pointer;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.product-name > h5:hover {
+  text-decoration: underline;
+}
+
+.product-heart {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.product-heart:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+
+.discount-icon {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  height: 33px;
+  width: 33px;
+  padding: 5px;
+}
+
+.small-arrow-left {
+  transform: rotate(180deg);
+  position: absolute;
+  left: 20px;
+}
+.small-arrow {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  padding: 4px;
+  box-shadow: 0px 0px 5px 4px #eee;
+}
+
+.small-arrow:hover {
+  box-shadow: 0px 0px 5px 4px rgb(223, 222, 222);
+}
+
+.small-arrow-right {
+  position: absolute;
+  right: 20px;
+}
+
+.product-button {
+  color: #40c1ac;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 50;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #40c1ac;
+}
+
+.product-button:hover {
+  background-color: #40c1ac;
+  color: white;
+}
+
+.virtual-glasses-section {
+  background-image: url("./assets/Untitled-1.png");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  position: relative;
+}
+
+.glasses-info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.virtual-image {
+  width: 60%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 65%;
+  left: 39.4%;
+  width: 70px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  background-color: #33aa96;
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.play-button:hover {
+  background-color: #60d1be;
+}
+
+.virtual-text > h2 {
+  color: #40c1ac;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.virtual-text > h5 {
+  color: #30ac97;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#glasses {
+  position: absolute;
+  top: 15%;
+  left: 48.5%;
+  z-index: 100;
+  width: 388px;
+  height: 248px;
+}
+
+.wrapper-1 {
+  width: 75%;
+  margin: 200px auto 0 auto;
+  position: relative;
+}
+
+.glasses {
+  width: 550px;
+  height: 380px;
+  object-fit: cover;
+}
+
+#background-photo {
+  position: absolute;
+  left: 38%;
+  top: 20%;
+}
+
+.background-text {
+  position: absolute;
+  background-color: white;
+  z-index: 9;
+  top: 30%;
+  left: 38%;
+  width: 40%;
+  height: 365px;
+  padding: 50px 50px 0 50px;
+}
+
+.background-text > h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.background-text > h5 {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.newsletter {
+  margin-top: 200px;
+  width: 100%;
+  background-image: url("./assets/photo/newsletter.png");
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-text > h3 {
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.newsletter-text > p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #999999;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.newsletter-input {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+}
+
+.newsletter-input > input {
+  width: 80%;
+  padding: 15px 0px 15px 20px;
+  border: none;
+}
+
+.newsletter-input > button {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+}
+
+.newsletter-input > button:hover {
+  background-color: #40c1ac;
+}
+
+footer {
+  border-bottom: 1px solid #999999;
+}
+
+.footer-text {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-text > p {
+  width: 20%;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.footer-info {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-words {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.footer-words:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons > img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 573px) {
+  .header-section {
+    height: 90px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  .certifications {
+    display: none;
+  }
+
+  #background-photo {
+    display: none;
+  }
+
+  .background-text {
+    position: unset;
+    width: unset;
+  }
+
+  .glasses {
+    height: 250px;
+    width: 300px;
+  }
+
+  .wrapper-1 {
+    display: flex;
+    position: unset;
+    flex-direction: column;
+  }
+
+  .auth {
+    white-space: nowrap;
+    margin-top: 15px;
+  }
+
+  .carousel-title {
+    top: 70%;
+    left: 10%;
+  }
+
+  .carousel-title > p {
+    color: white;
+  }
+
+  .carousel-title > h1 {
+    font-size: 14px;
+    color: white;
+  }
+
+  .carousel-title > h2 {
+    font-size: 10px;
+    color: white;
+  }
+
+  .price,
+  .euro {
+    color: white;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  .carousel-indicators {
+    bottom: 6%;
+  }
+
+  .carousel-container {
+    height: 480px;
+  }
+
+  .carousel-control-next {
+    display: none;
+  }
+
+  .brands > img {
+    height: 80px;
+  }
+
+  .logos {
+    height: 450px;
+    margin-top: -80px;
+  }
+
+  .small-arrow {
+    display: none;
+  }
+
+  .product-item {
+    margin-top: 40px;
+  }
+
+  .glasses-info {
+    display: block;
+    text-align: center;
+  }
+  .virtual-image {
+    width: 80%;
+    object-fit: contain;
+    margin-top: 30px;
+  }
+  .play-button {
+    left: 10%;
+    top: 75%;
+  }
+  #glasses {
+    left: 20%;
+    height: 130px;
+    width: 180px;
+    top: 60%;
+  }
+
+  .newsletter {
+    margin-top: 60px;
+    background-position: unset;
+  }
+
+  .newsletter-text {
+    text-align: center;
+  }
+
+  .newsletter-text > h3 {
+    font-size: 15px;
+  }
+  .newsletter-input {
+    display: block;
+  }
+
+  .newsletter-input > input {
+    padding: 10px 0px 10px 20px;
+  }
+
+  .newsletter-input > button {
+    width: 80%;
+    margin-top: 8px;
+  }
+
+  .footer-text {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: unset;
+    background-color: #c1f0e8;
+    padding: 20px 0px;
+    text-align: center;
+  }
+
+  .footer-info {
+    display: block;
+  }
+
+  .footer-info > p {
+    margin-top: 20px;
+  }
+
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  nav {
+    height: 300px;
+    display: block;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    width: 90%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .carousel-glasses > img {
+    display: none;
+  }
