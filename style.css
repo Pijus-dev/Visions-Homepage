@@ -674,7 +674,7 @@ footer {
   }
 
   .carousel-indicators {
-    bottom: 6%;
+    display: none;
   }
 
   .carousel-container {
