@@ -647,7 +647,7 @@ footer {
 
   .carousel-title {
     top: 70%;
-    left: 10%;
+    left: 2%;
   }
 
   .carousel-title > p {
@@ -801,3 +801,14 @@ footer {
   .carousel-glasses > img {
     display: none;
   }
+
+
+  .icons {
+    display: none;
+  }
+
+  .carousel-container > img {
+    object-fit: none;
+    object-position: 250% 50%;
+  }
+}
